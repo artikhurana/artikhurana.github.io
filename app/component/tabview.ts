@@ -18,7 +18,7 @@ export class TabView implements OnInit {
     public data: any;
     public childComponent: any;
     public activeItem: any;
-    public url = 'http://itunes.apple.com/search';
+    public url = 'https://itunes.apple.com/search';
     public loader: boolean = false;
     public artistDetail: ArtistDetail;
     private _jsonp: Jsonp;
