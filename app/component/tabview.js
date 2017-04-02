@@ -16,7 +16,7 @@ var artist_details_1 = require('./artist-details');
 var TabView = (function () {
     function TabView(componentFactoryResolver, jsonp, utils) {
         this.componentFactoryResolver = componentFactoryResolver;
-        this.url = 'http://itunes.apple.com/search';
+        this.url = 'https://itunes.apple.com/search';
         this.loader = false;
         this.childComponent = this.componentFactoryResolver.resolveComponentFactory(overlay_1.Overlay);
         this._jsonp = jsonp;
