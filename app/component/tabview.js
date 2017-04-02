@@ -8,12 +8,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var http_1 = require("@angular/http");
-var overlay_1 = require("./overlay/overlay");
-var utils_1 = require("./utils");
-var artist_details_1 = require("./artist-details");
+var http_1 = require('@angular/http');
+var overlay_1 = require('./overlay/overlay');
+var utils_1 = require('./utils');
+var artist_details_1 = require('./artist-details');
 var TabView = (function () {
     function TabView(componentFactoryResolver, jsonp, utils) {
         this.componentFactoryResolver = componentFactoryResolver;
@@ -73,21 +72,21 @@ var TabView = (function () {
         this.data = [];
         this.artistDetail = null;
     };
+    __decorate([
+        core_1.ViewChild('parent', { read: core_1.ViewContainerRef }), 
+        __metadata('design:type', (typeof (_a = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _a) || Object)
+    ], TabView.prototype, "target", void 0);
+    TabView = __decorate([
+        core_1.Component({
+            selector: 'tabview',
+            moduleId: module.id,
+            templateUrl: './tabview.html',
+            styleUrls: ['./tabview.css']
+        }), 
+        __metadata('design:paramtypes', [(typeof (_b = typeof core_1.ComponentFactoryResolver !== 'undefined' && core_1.ComponentFactoryResolver) === 'function' && _b) || Object, (typeof (_c = typeof http_1.Jsonp !== 'undefined' && http_1.Jsonp) === 'function' && _c) || Object, utils_1.Utils])
+    ], TabView);
     return TabView;
+    var _a, _b, _c;
 }());
-__decorate([
-    core_1.ViewChild('parent', { read: core_1.ViewContainerRef }),
-    __metadata("design:type", core_1.ViewContainerRef)
-], TabView.prototype, "target", void 0);
-TabView = __decorate([
-    core_1.Component({
-        selector: 'tabview',
-        moduleId: module.id,
-        templateUrl: './tabview.html',
-        styleUrls: ['./tabview.css']
-    }),
-    __metadata("design:paramtypes", [core_1.ComponentFactoryResolver, http_1.Jsonp,
-        utils_1.Utils])
-], TabView);
 exports.TabView = TabView;
 //# sourceMappingURL=tabview.js.map

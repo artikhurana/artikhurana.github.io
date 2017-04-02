@@ -8,11 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = require("@angular/core");
-var http_1 = require("@angular/http");
-var forms_1 = require("@angular/forms");
-var validator_1 = require("../custom-validtor/validator");
+var core_1 = require('@angular/core');
+var http_1 = require('@angular/http');
+var forms_1 = require('@angular/forms');
+var validator_1 = require('../custom-validtor/validator');
 var Overlay = (function () {
     function Overlay(jsonp) {
         this.submitted = false;
@@ -64,16 +63,17 @@ var Overlay = (function () {
             });
         });
     };
+    Overlay = __decorate([
+        core_1.Component({
+            selector: 'overlay',
+            templateUrl: 'overlay.html',
+            outputs: ['response'],
+            moduleId: module.id
+        }), 
+        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Jsonp !== 'undefined' && http_1.Jsonp) === 'function' && _a) || Object])
+    ], Overlay);
     return Overlay;
+    var _a;
 }());
-Overlay = __decorate([
-    core_1.Component({
-        selector: 'overlay',
-        templateUrl: 'overlay.html',
-        outputs: ['response'],
-        moduleId: module.id
-    }),
-    __metadata("design:paramtypes", [http_1.Jsonp])
-], Overlay);
 exports.Overlay = Overlay;
 //# sourceMappingURL=overlay.js.map

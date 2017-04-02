@@ -3,8 +3,7 @@
     defaultJSExtensions: true,
     paths: {
       // paths serve as alias
-      'npm:': 'node_modules/',
-      '@arti/': 'app/'
+      'npm:': 'n_modules/'
     },
     // map tells the System loader where to look for things
     map: {
