@@ -15,7 +15,7 @@ var validator_1 = require('../custom-validtor/validator');
 var Overlay = (function () {
     function Overlay(jsonp) {
         this.submitted = false;
-        this.url = 'http://itunes.apple.com/search?term=jack&limit=4&callback=JSONP_CALLBACK';
+        this.url = 'https://itunes.apple.com/search?term=jack&limit=4&callback=JSONP_CALLBACK';
         this._jsonp = jsonp;
         this.response = new core_1.EventEmitter();
     }
