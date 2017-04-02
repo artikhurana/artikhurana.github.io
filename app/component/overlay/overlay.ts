@@ -12,7 +12,7 @@ import { CustomValidators } from '../custom-validtor/validator';
 export class Overlay implements OnInit {
     public myForm: FormGroup; // our model driven form
     public submitted: boolean = false;
-    public url = 'http://itunes.apple.com/search?term=jack&limit=4&callback=JSONP_CALLBACK';
+    public url = 'https://itunes.apple.com/search?term=jack&limit=4&callback=JSONP_CALLBACK';
     public events: any;
     public response: EventEmitter<any>;
     private _jsonp: Jsonp;
